@@ -59,3 +59,32 @@
 #     string2=i+string2
 # print("\n the original string= ",string)
 # print("\n the reverse string is= ",string2)
+# num=int(input("enter the value of a number "))
+# sum=5
+# i=1
+# while i <=num:
+#     sum+=i
+#     i+=1
+# print("\nsum=",sum)
+# import random
+# secret_number=random.randint(1,10)
+# guess=None
+# print("welcome to my games with squids SQUID GAME")
+# print("guess a squid betwen 1 to 10 HHAHAHHAHHAHAHA")
+# while guess != secret_number:
+#     guess=int(input("ENTER A GUESS ANY GUESS!(1 TO 10)"))
+#     if guess<secret_number:
+#         print("too low you should try again HAHAHAHA")
+#     elif guess >secret_number:
+#         print('too high you bum try again')
+#     else:
+#         print('you passed now go back to your family :(')
+string=input("enter  a word...")
+char=input("please enter your character")
+i=0
+count=0 
+while(i<len(string)):
+    if(string[i]==char):
+        count+=1
+    i+=1
+print("the total number of times ",char," has occured = ",count )
