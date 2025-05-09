@@ -1,4 +1,4 @@
-
+# print('am so alpha lololol')
 # turtle.Screen().bgcolor("beige")
 # board=turtle.Turtle()
 # board.pensize(10)
@@ -62,17 +62,27 @@
 #     print ("the result is ",result)
 # except ZeroDivisionError:
 #     print ("division by zero is an error")
-import random
-playing=True
-num1=str(random.randint(1,15))
-print("lemme genarate a numer bruv you should guess it lol")
-print('yo btw the game should *i hope it wil end once you guess right loser you arent like that')
-while playing:
-    guess=input("gimme your 1 guess sucka")
-    print("hint 1-15")
-    if num1==guess:
-        print("fine you win but i still aint givin the robux GET SCAMME-")
-        print("dont mind that bozo he sucks right well the number was" ,num1)
-        break
-    else:
-        print("yo btw you were supposed to win robux suck sthu and leave bum L >:0 ")
+# import random
+# playing=True
+# num1=str(random.randint(1,15))
+# print("lemme genarate a numer bruv you should guess it lol")
+# print('yo btw the game should *i hope it wil end once you guess right loser you arent like that')
+# while playing:
+#     guess=input("gimme your 1 guess sucka")
+#     print("hint 1-15")
+#     if num1==guess:
+#         print("fine you win but i still aint givin the robux GET SCAMME-")
+#         print("dont mind that bozo he sucks right well the number was" ,num1)
+#         break
+#     else:
+#         print("yo btw you were supposed to win robux suck sthu and leave bum L >:0 ")
+from datetime import date,time,datetime
+import calendar
+today=date.today()
+num90=datetime.now()
+print("todays date date is this (no jk btw) ",today)
+print("the roblox dead rails players date thats carrying u is ",num90)
+print("your roblox character can get your year, month, day and hour ",today.year,today.month,today.day)
+year=2019
+Month=12
+print(calendar.month(year,Month))
