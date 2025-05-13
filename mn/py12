@@ -76,13 +76,88 @@
 #         break
 #     else:
 #         print("yo btw you were supposed to win robux suck sthu and leave bum L >:0 ")
-from datetime import date,time,datetime
-import calendar
-today=date.today()
-num90=datetime.now()
-print("todays date date is this (no jk btw) ",today)
-print("the roblox dead rails players date thats carrying u is ",num90)
-print("your roblox character can get your year, month, day and hour ",today.year,today.month,today.day)
-year=2019
-Month=12
-print(calendar.month(year,Month))
+# from datetime import date,time,datetime
+# import calendar
+# today=date.today()
+# num90=datetime.now()
+# print("todays date date is this (no jk btw) ",today)
+# print("the roblox dead rails players date thats carrying u is ",num90)
+# print("your roblox character can get your year, month, day and hour ",today.year,today.month,today.day)
+# year=2019
+# Month=12
+# print(calendar.month(year,Month))
+# def match(word):
+#     count=0
+#     list=[]
+#     for x in word:
+#         if len(x)>1 and x[0]==x[-1]:
+#             count+=1
+#             list.append(x)
+#     print("the list of homer simpson word with the first and the last character same ",list)
+#     return count 
+# counts=match(["tacocat","soos" "cbc"])
+# print("the number of words were ",counts)
+# weather=( 1,1,0,1,0,1,0)
+# sun=0
+# rain=0
+# for i in range(0,7):
+#     if (weather[i]==0):
+#         rain+=1
+#         print("its rain just rain:() ",rain)
+#     else:
+#         print('ITS SUNNY YAYAYYYAY ',sun)
+# if(sun>rain):
+#     print("WE CAN GO SWIMMING THE WEATHER IS PERFECT")
+# else:
+#     print("AWW THE WEATHER SUCKS PUT ON YOUR JACKETS")
+# student=["jack","zach","haem","zemm"]
+# students=student + student
+# print(students)
+# text_dict={"donlorenzo":2, "is":2, "isagi":2, 'for':2 , 'besdefanstrik':1}
+# k=2
+# res=0
+# for key in text_dict:
+#     if text_dict[key]==k:
+#         res+=1
+# print("the frequency of k is "+ str(res))
+# for i in range (10):
+#     if i==5:
+#         print(exit)
+#         exit()
+#     print(i)
+# num1=[1,2,3,4,5,6,7,8,9,10,11,12]
+# num2=[1,2,3,4,5,6,7,8,9,10,11,12]
+# result=map(lambda x,y:x+y,num1,num2)
+# print("the additon of those two list ",list(result))
+# num1=[1,2,3,4,5,6]
+# def sq(m):
+#     return m * m
+# square=list(map(sq,num1))
+# print("the square of a num in a list is ",square)
+import random
+import datetime
+def guessnumber():
+    starttime=datetime.datetime.now()
+    print("welcome to guess number game AGAIN idk y were not rigged trust ")
+    print("try to guess a number between 1-15")
+    numbertoguess=random.randint(1,15)
+    maximumattempts=10
+    attempt=0
+    while attempt < maximumattempts:
+        try:
+            guess=int(f"attempts {attempt +1} / {maximumattempts} - enter ur guess bruv")
+            attempt+=1
+            if guess < numbertoguess:
+                print("the number is tooooooo low try again")
+            elif guess > numbertoguess:
+                print ("THE NUMBER IS WAYY TO HIGH TRY AGAIN DUMMMY!")
+            else:
+                endtime=datetime.datetime.now()
+                timetaken=endtime -starttime
+                print(f"CONGRAGULATIONS!!! you guessed da numba in {attempt} attempts BOMBOCLAT")
+                print(f"yo btw you took {timetaken.seconds} seconds to guess da num IDIOT!!!! lololololololool")
+        except ValueError:
+            print('pls enter valued num bruv i beg')
+    if attempt == maximumattempts and guess != numbertoguess:
+        print(f"sorry you used all {maximumattempts} attempt idiot try again next time.the correct answer was{numbertoguess}")
+guessnumber()
