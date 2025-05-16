@@ -134,30 +134,39 @@
 #     return m * m
 # square=list(map(sq,num1))
 # print("the square of a num in a list is ",square)
-import random
-import datetime
-def guessnumber():
-    starttime=datetime.datetime.now()
-    print("welcome to guess number game AGAIN idk y were not rigged trust ")
-    print("try to guess a number between 1-15")
-    numbertoguess=random.randint(1,15)
-    maximumattempts=10
-    attempt=0
-    while attempt < maximumattempts:
-        try:
-            guess=int(f"attempts {attempt +1} / {maximumattempts} - enter ur guess bruv")
-            attempt+=1
-            if guess < numbertoguess:
-                print("the number is tooooooo low try again")
-            elif guess > numbertoguess:
-                print ("THE NUMBER IS WAYY TO HIGH TRY AGAIN DUMMMY!")
-            else:
-                endtime=datetime.datetime.now()
-                timetaken=endtime -starttime
-                print(f"CONGRAGULATIONS!!! you guessed da numba in {attempt} attempts BOMBOCLAT")
-                print(f"yo btw you took {timetaken.seconds} seconds to guess da num IDIOT!!!! lololololololool")
-        except ValueError:
-            print('pls enter valued num bruv i beg')
-    if attempt == maximumattempts and guess != numbertoguess:
-        print(f"sorry you used all {maximumattempts} attempt idiot try again next time.the correct answer was{numbertoguess}")
-guessnumber()
+# import random
+# import datetime
+# def guessnumber():
+#     starttime=datetime.datetime.now()
+#     print("welcome to guess number game AGAIN idk y were not rigged trust ")
+#     print("try to guess a number between 1-15")
+#     numbertoguess=random.randint(1,15)
+#     maximumattempts=10
+#     attempt=0
+#     while attempt < maximumattempts:
+#         try:
+#             guess=int(f"attempts {attempt +1} / {maximumattempts} - enter ur guess bruv")
+#             attempt+=1
+#             if guess < numbertoguess:
+#                 print("the number is tooooooo low try again")
+#             elif guess > numbertoguess:
+#                 print ("THE NUMBER IS WAYY TO HIGH TRY AGAIN DUMMMY!")
+#             else:
+#                 endtime=datetime.datetime.now()
+#                 timetaken=endtime -starttime
+#                 print(f"CONGRAGULATIONS!!! you guessed da numba in {attempt} attempts BOMBOCLAT")
+#                 print(f"yo btw you took {timetaken.seconds} seconds to guess da num IDIOT!!!! lololololololool")
+#         except ValueError:
+#             print('pls enter valued num bruv i beg')
+#     if attempt == maximumattempts and guess != numbertoguess:
+#         print(f"sorry you used all {maximumattempts} attempt idiot try again next time.the correct answer was{numbertoguess}")
+# guessnumber()
+class Students:
+    grade=14
+    def  __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def details(self):
+        print(f"ma name is {self.name} ,I am {self.age} years oldd mate I am in grade{self.grade} haha lol")
+x=Students(" STEVE!!!! ",55)
+x.details()
