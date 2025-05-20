@@ -161,12 +161,59 @@
 #     if attempt == maximumattempts and guess != numbertoguess:
 #         print(f"sorry you used all {maximumattempts} attempt idiot try again next time.the correct answer was{numbertoguess}")
 # guessnumber()
-class Students:
-    grade=14
-    def  __init__(self,name,age):
-        self.name=name
-        self.age=age
-    def details(self):
-        print(f"ma name is {self.name} ,I am {self.age} years oldd mate I am in grade{self.grade} haha lol")
-x=Students(" STEVE!!!! ",55)
-x.details()
+# class Students:
+#     grade=14
+#     def  __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#     def details(self):
+#         print(f"ma name is {self.name} ,I am {self.age} years oldd mate I am in grade{self.grade} haha lol")
+# x=Students(" STEVE!!!! ",55)
+# x.details()
+# class Vehicle:
+#     def __init__(self,name,maximumspin,mileage):
+#         self.name=name
+#         self.maximumspin=maximumspin
+#         self.mileage=mileage
+# class Bus(Vehicle):
+#     def __init__(self, name, maximumspin, mileage,colour):
+#         self.colour=colour
+#         super().__init__(name, maximumspin, mileage)
+# school=Bus("lahmborgini ",123,7,"black")
+# print(f"the name of the brand is {school.name} and its colour is {school.colour}")
+# class Computer:
+#     def __init__(self):
+#         self.__maxorice=1100
+#     def sell(self):
+#         print("the ammount that THIS laptop is sold for is ",self.__maxorice)
+#     def setmaxprice(self,price):
+#         self.__maxorice=price
+# prices=Computer()
+# prices.sell()
+# prices.__maxorice=34560
+# prices.sell()
+# prices.__maxorice(34560)
+# prices.sell()
+class square:
+    def __init__(self,side):
+        self.side=side
+    
+    def area(self):
+        print(f"the area of our square is {self.side * self.side}")
+class circle:
+    def __init__(self,radius):
+        self.radius=radius
+    def area(self):
+        print(f"the area of the circle is {3.14 * self.radius * self.radius}")
+class rectangle:
+    def __init__(self,face,size):
+        self.face=face
+        self.size=size
+    def area(self):
+        print(f"the area of the recantgle is {self.face * self.size} ")
+s=square(13)
+c=circle(12)
+r=rectangle(11,10)
+s.area()
+c.area()
+r.area()
